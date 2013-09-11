@@ -1,0 +1,27 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Document
+    link(rel='stylesheet', href='vendor/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='vendor/bootstrap/dist/css/bootstrap-theme.min.css')
+  body
+    #header
+      .navbar.navbar-fixed-top.navbar-inverse(role='navigation')
+        .container
+          .navbar-header
+            a.navbar-brand(href='#') Booklog
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='index.html') Home
+              li
+                a(href='about.html') About
+              li
+                a(href='contact.html') Contact
+
+    block body
+    hr
+    footer
+      | @ copyright booklog
+    script(src='vendor/jquery/jquery.min.js')
