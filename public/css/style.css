@@ -1,0 +1,12 @@
+body {
+  padding-top: 70px;
+  color: #333333;
+  font-family: "Open Sans", sans-serif; }
+
+#bookinfo {
+  padding-top: 40px;
+  border-bottom: 1px solid #cccccc; }
+  #bookinfo li {
+    color: #333333; }
+  #bookinfo #tag {
+    color: #333333; }

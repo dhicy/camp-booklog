@@ -2,9 +2,10 @@
 html(lang='en')
   head
     meta(charset='UTF-8')
-    title Document
+    block head
     link(rel='stylesheet', href='vendor/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', href='vendor/bootstrap/dist/css/bootstrap-theme.min.css')
+    block neck
   body
     #header
       .navbar.navbar-fixed-top.navbar-inverse(role='navigation')
@@ -23,5 +24,7 @@ html(lang='en')
     block body
     hr
     footer
-      | @ copyright booklog
+      .container
+        p © Booklog 2013
     script(src='vendor/jquery/jquery.min.js')
+    block foot

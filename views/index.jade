@@ -1,5 +1,14 @@
 extends layout
 
+block head
+  title Booklog
+
+block neck
+  link(rel='stylesheet', href='css/style.css')
+
+block foot
+  script(src='js/main.js')
+
 block body
   .container
     .row
@@ -51,5 +60,5 @@ block body
             div
               div
                 img.img-circle(src='http://www.gravatar.com/avatar/400c529007e2242ac7132c78fc772e91', width='48', height='48')
-                | Jollen Chen
+                |  Jollen Chen
               #bookinfo Tags 標籤
