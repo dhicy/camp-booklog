@@ -31,7 +31,8 @@ app.get('/', routes.index);
 app.get('/contact', routes.contact);
 app.get('/users', user.list);
 
-app.get('/books/:cat/:id/collections/index', routes.bookInfo);
+app.get('/books/:id/collections/index', routes.bookInfo);
+app.get('/books/:id/author', routes.author);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

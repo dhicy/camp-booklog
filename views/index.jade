@@ -8,6 +8,7 @@ block neck
 
 block foot
   script(src='js/main.js')
+  script(src='js/index.js')
 
 block body
   .container
@@ -58,7 +59,11 @@ block body
                 a(href='#') 第 5 課：了解 HTML5+CSS+JavaScript
             #bookinfo Author 作者
             div
-              div
-                img.img-circle(src='http://www.gravatar.com/avatar/400c529007e2242ac7132c78fc772e91', width='48', height='48')
-                |  Jollen Chen
-              #bookinfo Tags 標籤
+              div#author
+
+            #bookinfo Tags 標籤
+
+  script(type="text/template", id="tmpl-author")
+    img.img-circle(src!='http://www.gravatar.com/avatar/<%= hash %>', width='48', height='48')
+    |  <%= name %>
+

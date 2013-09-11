@@ -12,8 +12,17 @@ exports.contact = function(req, res){
 };
 
 exports.bookInfo = function(req, res){
-    console.log(req.params);
-    console.log(req.params.cat);
-    console.log(req.params.id);
-    res.send('ok');
+    res.send({
+        status: 'ok',
+        name: 'Andy',
+        title: 'hgeiwgewg'
+    });
+};
+
+exports.author = function(req, res){
+    res.send({
+        status: 'ok',
+        name: 'Jollen Chen',
+        hash: '400c529007e2242ac7132c78fc772e91'
+    });
 };
